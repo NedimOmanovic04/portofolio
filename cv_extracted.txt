@@ -1,0 +1,88 @@
+=== PAGE 1 ===
+Nedim Omanović
++387 62 917 364 | nomanovic3@etf.unsa.ba | nedimomanovic04@gmail.com
+github.com/NedimOmanovic04
+Profile
+Computer Science and Informatics graduate (BSc) from the Faculty of Electrical Engineering, Uni-
+versity of Sarajevo, focused on backend and full-stack development. Hands-on experience building
+and deploying web applications using TypeScript, Node.js, Express, Next.js, and SQL. Experienced
+with REST APIs, authentication, database integration, and agile team development. Interested in
+backend architecture, scalable systems, and cloud technologies.
+Education
+Faculty of Electrical Engineering, University of Sarajevo
+Bachelor of Science (BSc), Computer Science and Informatics 2023 – 2026
+Bachelor’s Thesis:Layout Algebra— constraint-based DSL layout editor for representing web
+layouts through semantic relationships, mathematical constraints, variables, and operators.
+Experience
+Student InternMay 4 – May 29, 2026
+Central Bank of Bosnia and Herzegovina, Sarajevo
+•Participatedincreatingphishingattackscenariosandsimulationsandpreparingdocumentation
+for security incident response procedures (Incident Response Plans)
+•Analyzed suspicious network traffic and packets using Wireshark as part of network-security
+analysis
+•Participated in verification of Oracle RMAN backup procedures and monitoring of Oracle Data
+Guard replication for backup, recovery, and high-availability processes
+•Used Oracle Enterprise Manager (OEM) to monitor database performance, resource utilization,
+and security alerts
+•Gained practical exposure to enterprise IT infrastructure, information security, databases, net-
+working, and technical support in a regulated financial institution
+Technical Skills
+Programming
+Languages
+TypeScript, JavaScript, Kotlin, C#, C, C++
+Backend & APIsNode.js, Express, REST APIs, Prisma ORM, Socket.IO, Zod
+FrontendReact, Next.js, HTML, CSS, Tailwind CSS, Vite
+Databases & BaaSSQL, MySQL, Supabase, PostgreSQL
+Cloud & Deploy-
+ment
+Cloudflare Pages, Vercel, Docker, Docker Compose,
+MobileAndroid, Kotlin, Jetpack Compose
+ToolsGit, GitHub, Postman, Wireshark, VS Code, Visual Studio, Android
+Studio, Jira, LaTe, Azure DevOps
+Languages
+Bosnian — Native English — C1
+Key Projects
+Layout Algebra — DSL Layout Editor(Bachelor’s Thesis)GitHub Live
+React, TypeScript, Vite, kiwi.js
+•Designed and implemented a specialized domain-specific language (DSL) for describing web
+layouts using semantic relationships, variables, operators, elements, and constraints
+
+=== PAGE 2 ===
+•Built the complete language-processing pipeline from scratch: tokenization, parsing, AST con-
+struction, and interpretation of DSL commands
+•Integrated thekiwi.jsCassowary solver for real-time resolution of mathematical layout con-
+straints and automatic element positioning
+•Implemented bidirectional synchronization between the DSL editor and visual canvas, plus
+CRUD, hierarchical elements, undo/redo history, and resizable panels
+•Built an export system translating constraints into production-ready CSS using Absolute po-
+sitioning, Flexbox, and CSS Grid
+Service Intervention Management System(Team Project, 8 members)GitHub Live
+Next.js, React, TypeScript, Node.js, Express, Prisma ORM, MySQL, Socket.IO, Docker Compose
+•Developed a full-stack service intervention platform in an 8-member team across 10+ agile
+sprints
+•Built intervention creation/editing, audit logging, Zod validation, 24+ unit tests, file attach-
+ments, user blocking, SLA/priority management, overdue detection, and management analytics
+•Implemented Keycloak authentication and role-based access control; contributed to UI/UX,
+sprint planning, Jira task distribution, documentation, and GitFlow
+Bridal Room — E-commerce Website(Freelance)GitHub Live
+Next.js 15, TypeScript, Tailwind CSS, Supabase, Cloudflare Pages
+•Designed, developed, and deployed a full-stack e-commerce website for a bridal dress shop for
+a paying client
+•Built product filtering, availability and category management, and a custom admin panel with
+authentication
+•Integrated Supabase for PostgreSQL data and image storage and Resend API for email delivery
+EMA Chiptuning — Business Website(Freelance)GitHub Live
+HTML5, CSS3, Vanilla JavaScript
+•Developed and deployed a production website for a paying chiptuning-service client
+•Built a calculator covering 130+ vehicle families and 800+ engine configurations with service
+recommendations
+•Implemented SEO features, WhatsApp integration, and Google Maps integration
+Other Projects
+•RibolovBiH(Next.js, TypeScript, Tailwind CSS)—Fishingassistantwithweatherdata, location-
+based recommendations, interactive maps, solunar calculations, species-specific scores, and fishing
+regulations. GitHub Live
+•Android News App(Kotlin, Jetpack Compose)— News app using MVVM, Retrofit, Coroutines,
+REST API integration, category filtering, and Compose state management. GitHub
+•Faculty Management System(C#)— Desktop CRUD application for student/faculty records
+with database integration. GitHub
+

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nedim Omanović | Software Engineer &amp; Full-Stack Architect</title>
+  <meta name="description" content="Portfolio Nedima Omanovića - Software Engineer i Full-Stack Developer. Specijaliziran za backend sisteme, DSL parsere, TypeScript, Node.js i baze podataka.">
+  <meta name="author" content="Nedim Omanović">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='2'><polyline points='4 17 10 11 4 5'/><line x1='12' y1='19' x2='20' y2='19'/></svg>">
+
+  <!-- Google Fonts: JetBrains Mono + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-architect-theme">
+
+  <!-- Interactive Terminal Fleeing Arrows Canvas Background -->
+  <canvas id="bgArrowsCanvas" class="bg-interactive-canvas"></canvas>
+
+  <!-- Top System Bar -->
+  <div class="system-status-bar">
+    <div class="status-bar-container">
+      <div class="status-item">
+        <span class="led-indicator led-green"></span>
+        <span class="mono-code">NODE: RUNNING</span>
+      </div>
+      <div class="status-item hide-mobile">
+        <span class="mono-dim">ENV:</span>
+        <span class="mono-code">PRODUCTION // ETF-UNSA</span>
+      </div>
+      <div class="status-item hide-mobile">
+        <span class="mono-dim">ARCH:</span>
+        <span class="mono-code">FULL-STACK &bull; BACKEND</span>
+      </div>
+      <div class="status-item right-status">
+        <span class="mono-dim">LOC:</span>
+        <span class="mono-code">SARAJEVO, BA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="terminal-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-terminal">
+        <span class="term-prompt">&gt;</span>
+        <span class="term-name">nedim_omanovic</span>
+        <span class="term-cursor">_</span>
+      </a>
+
+      <nav class="terminal-nav" id="terminalNav">
+        <a href="#about" class="nav-item"><span class="nav-idx">01</span>//profil</a>
+        <a href="#education" class="nav-item"><span class="nav-idx">02</span>//edukacija</a>
+        <a href="#skills" class="nav-item"><span class="nav-idx">03</span>//specifikacije</a>
+        <a href="#projects" class="nav-item"><span class="nav-idx">04</span>//sistemi</a>
+        <a href="#contact" class="nav-item nav-contact-btn"><span class="nav-idx">05</span>//kontakt_io</a>
+      </nav>
+
+      <div class="header-controls">
+        <a href="assets/NedimOmanovicCV.pdf" target="_blank" download="NedimOmanovicCV.pdf" class="btn-terminal btn-sm">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>CV.PDF</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Navigacijski meni">
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-layout">
+
+    <!-- SECTION 00: HERO // VIEWPORT -->
+    <section class="cyber-section hero-section" id="hero">
+      <div class="grid-container hero-grid">
+        
+        <!-- Left: Engineering Dossier -->
+        <div class="dossier-col">
+          <div class="terminal-meta-tag">
+            <span class="tag-bracket">[</span>
+            <span class="tag-label">SPEC // DEV_01</span>
+            <span class="tag-bracket">]</span>
+            <span class="tag-sep">&bull;</span>
+            <span class="tag-active">STATUS: DOSTUPAN ZA NOVE PROJEKTE</span>
+          </div>
+
+          <h1 class="hero-name">
+            Nedim Omanović
+          </h1>
+
+          <div class="terminal-role-box">
+            <span class="role-symbol">$</span>
+            <span class="role-text">Software Engineer &amp; Full-Stack Developer</span>
+          </div>
+
+          <p class="hero-statement">
+            Diplomirani inženjer računarstva i informatike sa Elektrotehničkog fakulteta Univerziteta u Sarajevu (ETF UNSA). Fokusiran na backend i full-stack razvoj. Praktično iskustvo u izgradnji web aplikacija kroz <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Next.js</strong> i <strong>SQL baze podataka</strong>. Posvećen pisanju urednog koda, stalnom učenju i radu na novim projektima.
+          </p>
+
+          <!-- Architectural Specs Row -->
+          <div class="arch-specs-grid">
+            <div class="spec-cell">
+              <span class="spec-key">DIPLOMA</span>
+              <span class="spec-val">BSc Računarstvo i informatika</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-key">INSTITUCIJA</span>
+              <span class="spec-val">ETF Univerzitet u Sarajevu</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-key">TEZA</span>
+              <span class="spec-val">Constraint-Based DSL Layout Editor</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-key">FOKUS</span>
+              <span class="spec-val">Full-Stack &bull; Backend Razvoj</span>
+            </div>
+          </div>
+
+          <!-- Action Control Line -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-terminal btn-primary">
+              <span class="btn-prefix">&gt;</span>
+              <span>Istraži sisteme</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-terminal btn-secondary">
+              <span class="btn-prefix">$</span>
+              <span>Inicijaliziraj kontakt</span>
+            </a>
+          </div>
+
+          <!-- Minimalist Social Links -->
+          <div class="terminal-socials">
+            <span class="social-mono-label">// POVEZNICE:</span>
+            <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="term-link">
+              <span>[GITHUB]</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nedim-omanovic-20a368409" target="_blank" rel="noopener noreferrer" class="term-link">
+              <span>[LINKEDIN]</span>
+            </a>
+            <a href="mailto:nedimomanovic04@gmail.com" class="term-link">
+              <span>[EMAIL]</span>
+            </a>
+            <a href="tel:+38762917364" class="term-link">
+              <span>[TEL]</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Architectural Viewport & Interactive Avatar -->
+        <div class="viewport-col">
+          <div class="viewport-panel">
+            
+            <!-- Viewport Architectural Frame Header -->
+            <div class="viewport-header">
+              <div class="viewport-indicators">
+                <span class="frame-dot"></span>
+                <span class="frame-dot"></span>
+                <span class="frame-dot"></span>
+              </div>
+              <span class="viewport-title">MODULE // AVATAR_TRACKER.SYS</span>
+              <span class="viewport-coords" id="viewportCoords">X: 000 | Y: 000</span>
+            </div>
+
+            <!-- Viewport Inner Body with Target Crosshairs -->
+            <div class="viewport-screen" id="avatarCard">
+              
+              <!-- Subtle Precision Reticle Lines -->
+              <div class="reticle-line reticle-h"></div>
+              <div class="reticle-line reticle-v"></div>
+
+              <!-- Avatar Image Composite -->
+              <div class="avatar-composite">
+                <!-- Sclera Base -->
+                <img src="assets/avatar_sclera_natural.png" alt="" class="comp-layer sclera-layer" aria-hidden="true">
+
+                <!-- Interactive Precision Pupils -->
+                <div class="pupil-element pupil-l" id="pupilLeft" aria-hidden="true">
+                  <div class="glint-dot"></div>
+                </div>
+                <div class="pupil-element pupil-r" id="pupilRight" aria-hidden="true">
+                  <div class="glint-dot"></div>
+                </div>
+
+                <!-- Neutral Face with Eye Cutouts -->
+                <img src="assets/avatar_cutout.png" alt="Nedim Omanović" class="comp-layer face-cutout-layer">
+
+                <!-- Smiling Face (Fades in during .happy contact state) -->
+                <img src="assets/avatar_smile.png" alt="Nedim Omanović Smiling" class="comp-layer face-smile-layer" aria-hidden="true">
+              </div>
+
+              <!-- Vector Line Art Wave / Acknowledgment Signal (No Emojis) -->
+              <div class="vector-signal-badge" id="vectorSignalBadge">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                <div class="signal-details">
+                  <span class="signal-code">SYS // ACK_SIGNAL</span>
+                  <span class="signal-desc">SIGNAL DETEKTOVAN</span>
+                </div>
+              </div>
+
+              <!-- Terminal Overlay Message on .happy -->
+              <div class="terminal-msg-bubble" id="terminalMsgBubble">
+                <span class="msg-prompt">&gt;</span>
+                <span class="msg-content">READY_FOR_COLLABORATION // POŠALJI UPIT</span>
+              </div>
+
+            </div>
+
+            <!-- Viewport Footer Calibration Data -->
+            <div class="viewport-footer">
+              <span class="footer-status"><span class="led-indicator led-green"></span> OPTICS: ACTIVE</span>
+              <span class="footer-note">CALCULATING ATAN2(DY, DX)</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 01: PROFILE & ARCHITECTURE -->
+    <section class="cyber-section" id="about">
+      <div class="grid-container">
+        <div class="section-badge-bar">
+          <span class="section-index">01</span>
+          <span class="section-name">ARHITEKTURA &amp; INŽENJERSKI PROFIL</span>
+        </div>
+
+        <div class="two-col-grid">
+          <!-- Text Dossier -->
+          <div class="terminal-panel">
+            <div class="panel-header">
+              <span class="panel-tag">// BIO_LOG</span>
+              <span class="panel-id">REF: NO_2026</span>
+            </div>
+            <div class="panel-body">
+              <p class="body-p">
+                Kao inženjer računarstva sa završenim BSc studijem na Elektrotehničkom fakultetu u Sarajevu, moj fokus je usmjeren na <strong>arhitekturu backend sistema</strong>, <strong>optimizaciju performansi</strong> i <strong>formalne domenske jezike (DSL)</strong>.
+              </p>
+              <p class="body-p">
+                Kombinujem akademsku rigoroznost u strukturama podataka i algoritmima sa praktičnim iskustvom u razvoju full-stack web rješenja. Kroz rad u agilnim timovima od 8 članova i samostalne klijentske projekte, primjenjujem visoke standarde čistoće koda, tipizacije (TypeScript), automatizacije i testiranja.
+              </p>
+              <div class="tech-matrix-summary">
+                <div class="matrix-row">
+                  <span class="matrix-label">STRUKTURA:</span>
+                  <span class="matrix-value">Modulski, skalabilni servisi sa strogom separacijom slojeva</span>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-label">VALIDACIJA:</span>
+                  <span class="matrix-value">Type-safe šeme (Zod), ORM integracija (Prisma), unit testovi</span>
+                </div>
+                <div class="matrix-row">
+                  <span class="matrix-label">SIGURNOST:</span>
+                  <span class="matrix-value">Keycloak RBAC, JWT protokoli, sanitizacija mrežnih ulaza</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architectural Tenets -->
+          <div class="terminal-panel">
+            <div class="panel-header">
+              <span class="panel-tag">// INŽENJERSKI_PRINCIPI</span>
+              <span class="panel-id">RULES_OF_ENGAGEMENT</span>
+            </div>
+            <div class="panel-body">
+              <ul class="terminal-checklist">
+                <li>
+                  <span class="check-box">[X]</span>
+                  <div>
+                    <strong>Type-Safety First:</strong> Statička verifikacija kroz TypeScript i Zod na svim granicama API-ja.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-box">[X]</span>
+                  <div>
+                    <strong>Optimizacija upita:</strong> Efikasno indeksiranje, relacioni integritet i smanjenje latencije baza podataka (PostgreSQL / MySQL).
+                  </div>
+                </li>
+                <li>
+                  <span class="check-box">[X]</span>
+                  <div>
+                    <strong>Deklarativna rješenja:</strong> Rad na Cassowary matematičkim solverima umjesto krhkih imperativnih pozicioniranja.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-box">[X]</span>
+                  <div>
+                    <strong>Modularni kod:</strong> Bez suvišnog framework balasta i šablonskog koda; fokus na robusnost i brzinu.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: EDUCATION & THESIS -->
+    <section class="cyber-section" id="education">
+      <div class="grid-container">
+        <div class="section-badge-bar">
+          <span class="section-index">02</span>
+          <span class="section-name">AKADEMSKO OBRAZOVANJE &amp; TEZA</span>
+        </div>
+
+        <div class="terminal-panel full-panel">
+          <div class="panel-header">
+            <span class="panel-tag">// AKADEMSKA_DOKUMENTACIJA</span>
+            <span class="panel-id">PERIOD: 2023 &ndash; 2026</span>
+          </div>
+          <div class="panel-body education-layout">
+            <div class="edu-institution-col">
+              <div class="edu-header">
+                <h3 class="edu-title">Univerzitet u Sarajevu</h3>
+                <h4 class="edu-sub">Elektrotehnički fakultet (ETF UNSA)</h4>
+                <div class="edu-meta-pills">
+                  <span class="spec-code">STEPEN: Bachelor of Science (BSc)</span>
+                  <span class="spec-code">ODSJEK: Računarstvo i informatika</span>
+                </div>
+              </div>
+              <p class="edu-desc">
+                Akademski kurikulum obuhvatio je napredne algoritme i strukture podataka, softverski inženjering, relacione baze podataka, operativne sisteme, računarske mreže, objektno-orijentisano i funkcionalno programiranje, te formalne jezike i parsere.
+              </p>
+            </div>
+
+            <!-- Thesis Focus Box -->
+            <div class="thesis-cyber-card">
+              <div class="thesis-card-header">
+                <span class="thesis-tag-code">DIPLOMSKI_RAD // RESEARCH</span>
+                <span class="led-indicator led-green"></span>
+              </div>
+              <h5 class="thesis-name">Layout Algebra — Constraint-Based DSL Layout Editor</h5>
+              <p class="thesis-text">
+                Specijalizirani domenski jezik (DSL) i vizuelno radno okruženje za deklarativno modeliranje web layouta. Umjesto statičkih piksela, elementi se definišu kroz semantičke relacije i linearne matematičke nejednačine koje u realnom vremenu rješava integrisani <strong>Cassowary solver (kiwi.js)</strong>.
+              </p>
+              <div class="thesis-specs-list">
+                <span class="t-spec">Pipeline: Tokenizacija &bull; AST Parser &bull; Interpreter</span>
+                <span class="t-spec">Dvosmjerna sinhronizacija DSL koda i platna</span>
+                <span class="t-spec">Kompilacija u produkcijski CSS (Grid, Flexbox, Absolute)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TECH SPECIFICATIONS -->
+    <section class="cyber-section" id="skills">
+      <div class="grid-container">
+        <div class="section-badge-bar">
+          <span class="section-index">03</span>
+          <span class="section-name">TEHNIČKE SPECIFIKACIJE &amp; STACK</span>
+        </div>
+
+        <div class="tech-grid">
+          
+          <!-- Box 1: Core Languages -->
+          <div class="terminal-panel spec-box">
+            <div class="panel-header">
+              <span class="panel-tag">// JEZICI</span>
+              <span class="panel-counter">[01/05]</span>
+            </div>
+            <div class="panel-body">
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="lang-id">TypeScript</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 80%;"></span></span>
+                  <span class="lang-level">FOKUS</span>
+                </div>
+                <div class="spec-row">
+                  <span class="lang-id">JavaScript (ES6+)</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 80%;"></span></span>
+                  <span class="lang-level">FOKUS</span>
+                </div>
+                <div class="spec-row">
+                  <span class="lang-id">SQL</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 75%;"></span></span>
+                  <span class="lang-level">SOLIDNO</span>
+                </div>
+                <div class="spec-row">
+                  <span class="lang-id">Kotlin</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 65%;"></span></span>
+                  <span class="lang-level">OSNOVE</span>
+                </div>
+                <div class="spec-row">
+                  <span class="lang-id">C# / .NET</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 65%;"></span></span>
+                  <span class="lang-level">OSNOVE</span>
+                </div>
+                <div class="spec-row">
+                  <span class="lang-id">C++ / C</span>
+                  <span class="lang-bar"><span class="bar-fill" style="width: 60%;"></span></span>
+                  <span class="lang-level">AKADEMSKO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2: Backend Architecture -->
+          <div class="terminal-panel spec-box">
+            <div class="panel-header">
+              <span class="panel-tag">// BACKEND &amp; SERVISI</span>
+              <span class="panel-counter">[02/05]</span>
+            </div>
+            <div class="panel-body">
+              <div class="term-tags-cloud">
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Node.js</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Express.js</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> REST APIs</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Prisma ORM</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Socket.IO</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Zod Validation</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Keycloak Auth</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> JWT Tokens</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 3: Frontend Systems -->
+          <div class="terminal-panel spec-box">
+            <div class="panel-header">
+              <span class="panel-tag">// FRONTEND &amp; UI ARHITEKTURA</span>
+              <span class="panel-counter">[03/05]</span>
+            </div>
+            <div class="panel-body">
+              <div class="term-tags-cloud">
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> React.js</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Next.js 15</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Tailwind CSS</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Vite Toolchain</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> CSS Grid &amp; Flexbox</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> State Machines</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> HTML5 Canvas</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 4: Databases & Infrastructure -->
+          <div class="terminal-panel spec-box">
+            <div class="panel-header">
+              <span class="panel-tag">// BAZE &amp; CLOUD INFRA</span>
+              <span class="panel-counter">[04/05]</span>
+            </div>
+            <div class="panel-body">
+              <div class="term-tags-cloud">
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> PostgreSQL</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> MySQL</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Supabase BaaS</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Docker</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Docker Compose</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Cloudflare Pages</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Vercel</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 5: Engineering Tools -->
+          <div class="terminal-panel spec-box">
+            <div class="panel-header">
+              <span class="panel-tag">// INŽENJERSKI ALATI &amp; PROTOKOLI</span>
+              <span class="panel-counter">[05/05]</span>
+            </div>
+            <div class="panel-body">
+              <div class="term-tags-cloud">
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Git &amp; GitFlow</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Android (Compose)</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Postman</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Wireshark</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Jira &amp; Agile/Scrum</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> Azure DevOps</div>
+                <div class="tech-cell"><span class="cell-prefix">&gt;</span> LaTeX</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: PRODUCTION SYSTEMS & PROJECTS -->
+    <section class="cyber-section" id="projects">
+      <div class="grid-container">
+        <div class="section-badge-bar">
+          <span class="section-index">04</span>
+          <span class="section-name">PRODUKCIJSKI SISTEMI &amp; PROJEKTI</span>
+        </div>
+
+        <div class="projects-matrix">
+          
+          <!-- System 01: Layout Algebra (Thesis) -->
+          <article class="terminal-panel project-panel featured-sys">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_01 // RESEARCH</span>
+                <span class="sys-type">[TEZA &bull; DSL SOLVER]</span>
+              </div>
+              <span class="status-indicator-tag"><span class="led-indicator led-green"></span> OPERATIONAL</span>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">Layout Algebra &mdash; DSL Web Layout Editor</h3>
+              <p class="sys-summary">
+                Samostalno osmišljen i implementiran domenski jezik (DSL) sa parserom za modeliranje web rasporeda elemenata preko matematičkih relacija i nejednačina umjesto fiksnih piksela.
+              </p>
+              <div class="sys-technical-bullets">
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Pipeline:</strong> Izrada tokenizatora, parsera i konstrukcija apstraktnog sintaksnog stabla (AST) od nule.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Solver:</strong> Integracija <code>kiwi.js</code> Cassowary linear constraint solvera za automatsko rješavanje pozicija u realnom vremenu.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Sinkronizacija:</strong> Dvosmjerna veza editora koda i platna, hijerarhije, historija koraka (undo/redo) i generisanje čistog CSS-a (Grid, Flexbox).</div>
+              </div>
+              <div class="sys-tech-row">
+                <span class="sys-tag">React</span>
+                <span class="sys-tag">TypeScript</span>
+                <span class="sys-tag">Vite</span>
+                <span class="sys-tag">kiwi.js</span>
+                <span class="sys-tag">AST Parsing</span>
+                <span class="sys-tag">CSS Architecture</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-primary btn-sm">
+                  <span>[LIVE_DEMO]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 02: Service Intervention Management Platform -->
+          <article class="terminal-panel project-panel">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_02 // ENTERPRISE</span>
+                <span class="sys-type">[TIMSKI RAD &bull; 8 ČLANOVA]</span>
+              </div>
+              <span class="status-indicator-tag"><span class="led-indicator led-green"></span> VERIFIED</span>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">Service Intervention Management Platform</h3>
+              <p class="sys-summary">
+                Sveobuhvatna full-stack platforma za upravljanje servisnim intervencijama, audit logovima i SLA rokovima, razvijena u timu od 8 inženjera kroz 10+ agilnih sprinteva.
+              </p>
+              <div class="sys-technical-bullets">
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Sigurnost:</strong> Keycloak autentifikacija i Role-Based Access Control (RBAC).</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Backend logika:</strong> Zod validacija, 24+ unit testova, upravljanje prioritetima i detekcija kašnjenja.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Real-Time:</strong> Socket.IO notifikacije, upload datoteka i menadžerska analitika.</div>
+              </div>
+              <div class="sys-tech-row">
+                <span class="sys-tag">Next.js</span>
+                <span class="sys-tag">Node.js</span>
+                <span class="sys-tag">Express</span>
+                <span class="sys-tag">Prisma ORM</span>
+                <span class="sys-tag">MySQL</span>
+                <span class="sys-tag">Socket.IO</span>
+                <span class="sys-tag">Docker Compose</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 03: Bridal Room E-commerce -->
+          <article class="terminal-panel project-panel">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_03 // PRODUCTION</span>
+                <span class="sys-type">[KLIJENTSKI PROJEKAT]</span>
+              </div>
+              <span class="status-indicator-tag"><span class="led-indicator led-green"></span> LIVE</span>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">Bridal Room &mdash; E-Commerce &amp; Rezervacije</h3>
+              <p class="sys-summary">
+                Kompletno razvijen i isporučen produkcijski web shop sa katalogom artikala, sistemom termina i prilagođenim administrativnim panelom.
+              </p>
+              <div class="sys-technical-bullets">
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Data Layer:</strong> Supabase PostgreSQL baza, pohrana slika i zaštićena autentifikacija.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Performanse:</strong> Next.js 15 App Router raspoređen na Cloudflare Pages globalnom edge-u.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Integracije:</strong> Resend API za automatske transakcijske obavijesti.</div>
+              </div>
+              <div class="sys-tech-row">
+                <span class="sys-tag">Next.js 15</span>
+                <span class="sys-tag">TypeScript</span>
+                <span class="sys-tag">Tailwind CSS</span>
+                <span class="sys-tag">Supabase</span>
+                <span class="sys-tag">Cloudflare Pages</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 04: EMA Chiptuning -->
+          <article class="terminal-panel project-panel">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_04 // AUTOMOTIVE</span>
+                <span class="sys-type">[KLIJENTSKI PROJEKAT]</span>
+              </div>
+              <span class="status-indicator-tag"><span class="led-indicator led-green"></span> LIVE</span>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">EMA Chiptuning &mdash; Automotive Platforma</h3>
+              <p class="sys-summary">
+                Produkcijska web stranica sa interaktivnim kalkulatorom performansi za tuning motornih vozila sa brzim odzivom i optimiziranim SEO profilom.
+              </p>
+              <div class="sys-technical-bullets">
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Kalkulator:</strong> Obrada podataka za 130+ porodica vozila i 800+ motornih specifikacija.</div>
+                <div class="t-bullet"><span class="bullet-sym">&gt;&gt;</span> <strong>Integracije:</strong> WhatsApp API direktna veza i prilagođene Google Mape.</div>
+              </div>
+              <div class="sys-tech-row">
+                <span class="sys-tag">HTML5</span>
+                <span class="sys-tag">CSS3</span>
+                <span class="sys-tag">Vanilla JS</span>
+                <span class="sys-tag">SEO Engine</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 05: RibolovBiH -->
+          <article class="terminal-panel project-panel">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_05 // APPLICATION</span>
+                <span class="sys-type">[MAPS &bull; WEATHER API]</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">RibolovBiH &mdash; Meteorološki asistent</h3>
+              <p class="sys-summary">
+                Web servis za ribolovce sa vremenskim podacima u realnom vremenu, solunarnim kalkulacijama i lokacijskim prikazima na mapi.
+              </p>
+              <div class="sys-tech-row">
+                <span class="sys-tag">Next.js</span>
+                <span class="sys-tag">TypeScript</span>
+                <span class="sys-tag">Tailwind CSS</span>
+                <span class="sys-tag">Weather API</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- System 06: Android News App -->
+          <article class="terminal-panel project-panel">
+            <div class="panel-header">
+              <div class="sys-id-group">
+                <span class="sys-code">SYS_06 // MOBILE</span>
+                <span class="sys-type">[KOTLIN &bull; COMPOSE]</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <h3 class="sys-title">Android News App &mdash; MVVM Arhitektura</h3>
+              <p class="sys-summary">
+                Mobilna aplikacija za vijesti izgrađena prema modernim Android smjernicama: deklarativni Jetpack Compose, Retrofit klijent, Coroutines i StateFlow.
+              </p>
+              <div class="sys-tech-row">
+                <span class="sys-tag">Android</span>
+                <span class="sys-tag">Kotlin</span>
+                <span class="sys-tag">Jetpack Compose</span>
+                <span class="sys-tag">MVVM</span>
+                <span class="sys-tag">Retrofit</span>
+              </div>
+              <div class="sys-links-row">
+                <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm">
+                  <span>[SOURCE // GITHUB]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CONSOLE IO // CONTACT (INTERACTIVE TRIGGER ZONE) -->
+    <section class="cyber-section contact-section" id="contact">
+      <div class="grid-container">
+        
+        <div class="section-badge-bar">
+          <span class="section-index">05</span>
+          <span class="section-name">KONZOLA ZA KOMUNIKACIJU // KONTAKT_IO</span>
+        </div>
+
+        <div class="terminal-info-banner">
+          <span class="led-indicator led-amber"></span>
+          <span class="mono-code">[INTERACTION_TRIGGER: AKTIVAN] Pređite kursorom ili dodirnite ovu zonu za profilnu reakciju avatara.</span>
+        </div>
+
+        <div class="contact-terminal-grid">
+          
+          <!-- Column 1: Endpoint Records -->
+          <div class="terminal-panel">
+            <div class="panel-header">
+              <span class="panel-tag">// KOMUNIKACIJSKI_KANALI</span>
+              <span class="panel-id">STATUS: OPEN</span>
+            </div>
+            <div class="panel-body">
+              
+              <!-- Endpoint 1 -->
+              <div class="endpoint-item">
+                <div class="endpoint-meta">
+                  <span class="ep-label">PRIMARNI_MAIL</span>
+                  <a href="mailto:nedimomanovic04@gmail.com" class="ep-val">nedimomanovic04@gmail.com</a>
+                </div>
+                <button class="btn-terminal btn-sm copy-btn" data-copy="nedimomanovic04@gmail.com" title="Kopiraj">
+                  <span>[KOPIRAJ]</span>
+                </button>
+              </div>
+
+              <!-- Endpoint 2 -->
+              <div class="endpoint-item">
+                <div class="endpoint-meta">
+                  <span class="ep-label">FAKULTETSKI_MAIL</span>
+                  <a href="mailto:nomanovic3@etf.unsa.ba" class="ep-val">nomanovic3@etf.unsa.ba</a>
+                </div>
+                <button class="btn-terminal btn-sm copy-btn" data-copy="nomanovic3@etf.unsa.ba" title="Kopiraj">
+                  <span>[KOPIRAJ]</span>
+                </button>
+              </div>
+
+              <!-- Endpoint 3 -->
+              <div class="endpoint-item">
+                <div class="endpoint-meta">
+                  <span class="ep-label">TELEFON // WHATSAPP</span>
+                  <a href="tel:+38762917364" class="ep-val">+387 62 917 364</a>
+                </div>
+                <button class="btn-terminal btn-sm copy-btn" data-copy="+38762917364" title="Kopiraj">
+                  <span>[KOPIRAJ]</span>
+                </button>
+              </div>
+
+              <!-- Endpoint 4: LinkedIn -->
+              <div class="endpoint-item">
+                <div class="endpoint-meta">
+                  <span class="ep-label">LINKEDIN // PROFIL</span>
+                  <a href="https://www.linkedin.com/in/nedim-omanovic-20a368409" target="_blank" rel="noopener noreferrer" class="ep-val">in/nedim-omanovic-20a368409</a>
+                </div>
+                <a href="https://www.linkedin.com/in/nedim-omanovic-20a368409" target="_blank" rel="noopener noreferrer" class="btn-terminal btn-sm" title="Otvori LinkedIn">
+                  <span>[OTVORI]</span>
+                </a>
+              </div>
+
+              <!-- Endpoint 5 & 6 Grid -->
+              <div class="endpoint-sub-grid">
+                <div class="ep-mini-block">
+                  <span class="ep-label">GITHUB</span>
+                  <a href="https://github.com/NedimOmanovic04" target="_blank" rel="noopener noreferrer" class="ep-val">
+                    NedimOmanovic04
+                  </a>
+                </div>
+                <div class="ep-mini-block">
+                  <span class="ep-label">LOKACIJA</span>
+                  <span class="ep-val">Sarajevo, BiH</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Terminal Transmission Form -->
+          <div class="terminal-panel">
+            <div class="panel-header">
+              <span class="panel-tag">// DIREKTNI_UPIT_FORM</span>
+              <span class="panel-id">METHOD: POST // MAILTO</span>
+            </div>
+            <div class="panel-body">
+              <form id="terminalContactForm" onsubmit="handleTerminalSubmit(event)">
+                <div class="term-field">
+                  <label for="clientName" class="term-label"><span class="field-symbol">&gt;</span> IDENTIFIKATOR / IME:</label>
+                  <input type="text" id="clientName" required class="term-input" placeholder="npr. Adnan Hadžić ili Kompanija">
+                </div>
+
+                <div class="term-field">
+                  <label for="clientEmail" class="term-label"><span class="field-symbol">&gt;</span> EMAIL POŠILJAOCA:</label>
+                  <input type="email" id="clientEmail" required class="term-input" placeholder="vas.email@domena.com">
+                </div>
+
+                <div class="term-field">
+                  <label for="clientSubject" class="term-label"><span class="field-symbol">&gt;</span> PREDMET // TIP PROJEKTA:</label>
+                  <input type="text" id="clientSubject" required class="term-input" placeholder="Ponuda za posao / Full-stack projekat">
+                </div>
+
+                <div class="term-field">
+                  <label for="clientMessage" class="term-label"><span class="field-symbol">&gt;</span> SPECIFIKACIJA PORUKE:</label>
+                  <textarea id="clientMessage" rows="4" required class="term-input" placeholder="Unesite detalje upita..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-terminal btn-primary btn-block">
+                  <span class="btn-prefix">&gt;&gt;</span>
+                  <span>POŠALJI TRANSMISIJU</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Terminal Minimalist Footer -->
+  <footer class="terminal-footer">
+    <div class="footer-inner">
+      <div class="footer-spec">
+        <span class="mono-code">NEDIM_OMANOVIĆ // 2026</span>
+        <span class="mono-dim">&bull; BSc Inženjer računarstva i informatike</span>
+      </div>
+      <div class="footer-spec">
+        <span class="mono-dim">CYBER-ARCHITECT TERMINAL ENGINE &bull; NO SLOP &bull; ZERO TAILWIND DEPENDENCY</span>
+      </div>
+      <div class="footer-spec">
+        <a href="#hero" class="term-link">[VRH // NAV_TOP]</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="terminal-toast" id="terminalToast">
+    <span class="led-indicator led-green"></span>
+    <span class="toast-code" id="toastCode">DATA_COPIED // U MEĐUSPREMNIK</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
